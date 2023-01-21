@@ -1,0 +1,10 @@
+<div class="card text-center">
+    <div class="card-body">
+        No description yet <button type="button" class="btn btn-link">+Add Description</button>
+    </div>
+</div>
+<ul class="list-group">
+    <div *ngFor="let comp of companyList; let endVal=index">
+        <li class="list-group-item" *ngIf="endVal<numOfEnt">{{comp}}</li>
+    </div>
+</ul>

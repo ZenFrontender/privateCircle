@@ -1,0 +1,31 @@
+.card{
+    border-radius: 0;
+    border: 0;
+    margin-top: 2vh;
+    background-color: rgb(249, 245, 245);
+    width: 90%;
+    height: 8vh;
+    margin-left: 5%;
+    color: rgb(169, 163, 163);
+    font-weight: 500;
+    margin-bottom: 3vh;
+  
+  }
+  
+  .btn-link{
+    text-decoration: none;
+    color: rgb(17, 85, 131);
+    font-size: 100%;
+    font-weight: 500;
+  }
+  
+  .list-group-item{
+    border: 0;
+    color: rgb(30, 123, 185);
+    font-size: 95%;
+  }
+  
+  .descEntities{
+    overflow-y: scroll;
+    height:88vh
+  }

@@ -1,0 +1,63 @@
+.col-2{
+    width: 40vw;
+    font-weight: 600;
+    font-size: 1.10vw;
+  }
+  
+  .col-1{
+    padding-left: 2vw;
+    color: rgb(169, 163, 163);
+    width: 8vw;
+  }
+  
+  .col-4{
+    width: 20vw;
+    color: rgb(169, 163, 163);
+    
+  }
+  
+  .col-3{
+    text-align: right;
+    width: 10vw;
+    padding-right: 2vw;
+  
+  }
+  
+  .tr1{
+    color: rgb(169, 163, 163);
+    font-weight: 500;
+  
+  }
+  
+  
+  .bi{
+    padding-right: 1.4vw;
+  }
+  
+  .bi-funnel{
+    padding-right: 0vw;
+  }
+  
+  .btn-light{
+    color: navy;
+    border-radius: 0;
+    width: 5vw;
+    font-size: small;
+    border: none;
+  }
+  
+
+  tbody{
+    line-height: 5.75vh;
+  }
+  
+  thead{
+    line-height: 4vh;
+  }
+
+  .active{
+    
+    border-bottom: 0.5vh solid rgb(0, 0, 0);
+    background-color: white;
+  }
+  

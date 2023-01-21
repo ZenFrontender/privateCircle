@@ -1,0 +1,22 @@
+.lists {
+  overflow-y: scroll;
+  height: 88vh
+}
+
+.lists::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+.lists::-webkit-scrollbar-thumb {
+
+  border-radius: 10px;
+
+  background-color: rgb(164, 163, 163);
+}
+
+.lists::-webkit-scrollbar-track {
+  background-color: gainsboro;
+  border-radius: 10px;
+
+}

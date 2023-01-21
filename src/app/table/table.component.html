@@ -1,0 +1,23 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <td scope="col" class="col-1 tr1">Date</td>
+        <td scope="col" class="col-2 tr1">List Name</td>
+        <td scope="col" class="col-3 tr1">No. of Entities</td>
+        <td scope="col" class="col-4 tr1">Actions</td>
+        <td scope="col"></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of tableData | filter:searchText">
+        <td class="col-1" *ngIf="row.numberOfEntities==0"><mat-icon>cyclone</mat-icon></td>
+        <td class="col-1" *ngIf="row.numberOfEntities!=0">{{row.date}}</td>
+        <td class="col-2" [ngStyle]="{'color': row.numberOfEntities ? 'black' : 'skyblue' }">{{row.listName}}</td>
+        <td class="col-3">{{row.numberOfEntities}}</td>
+        <td class="col-4" *ngIf="row.numberOfEntities==0"><i class="bi bi-envelope envicon"></i></td>
+        <td class="col-4" *ngIf="row.numberOfEntities!=0"><i class="bi bi-envelope envicon"></i><i class="bi bi-share"></i><i class="bi bi-pencil"></i><i class="bi bi-trash3"></i></td>
+        <td><button type="button" class="btn btn-light" (click)="val(row.numberOfEntities)" [routerLink]="'/itemDetails/'+row.listName" routerLinkActive="active">Details</button></td>
+      </tr>
+     
+    </tbody>
+  </table>

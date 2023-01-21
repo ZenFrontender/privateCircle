@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-light py-3">
+    <button type="button" class="btn btn-primary"><mat-icon aria-hidden="false" aria-label="Example home icon"
+            fontIcon="home">list</mat-icon>SAVED LISTS</button>
+    <button type="button" class="btn btn-secondar"><i class="bi bi-funnel"></i> <span class="link-text-1">
+            SAVED FILTERS</span></button>
+    <button type="button" class="btn btn-secondar"><mat-icon>history</mat-icon><span class="link-text-2">SEARCH
+            HISTORY</span></button>
+
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search"
+            (keyup)="onInput(box.value)" [(ngModel)]="searchText" #box>
+    </form>
+</nav>
